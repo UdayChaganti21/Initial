@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form action="/submit-form" method="POST">
+        
+        <!-- First Name -->
+        <label for="first-name">First Name:</label><br>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <!-- Middle Name -->
+        <label for="middle-name">Middle Name:</label><br>
+        <input type="text" id="middle-name" name="middle-name"><br><br>
+
+        <!-- Last Name -->
+        <label for="last-name">Last Name:</label><br>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Mobile Number -->
+        <label for="mobile-no">Mobile Number:</label><br>
+        <input type="tel" id="mobile-no" name="mobile-no" pattern="\+91[0-9]{10}" required placeholder="+91xxxxxxxxxx"><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
